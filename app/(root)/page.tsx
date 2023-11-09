@@ -1,9 +1,11 @@
-"use client";
+import Image from "next/image";
 
-export default function Home() {
+function Home() {
   return (
-    <main>
-      <h1 className="">My portfolio</h1>
+    <main className="mt-4">
+      <h1>Content here</h1>
     </main>
   );
 }
+
+export default Home;
