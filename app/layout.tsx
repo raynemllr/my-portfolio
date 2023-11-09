@@ -1,3 +1,4 @@
+import Topbar from "@/components/shared/Topbar";
 import Provider from "@/lib/Provider";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
@@ -9,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Simple Portfolio developed using Next 14",
+  title: "Rayne Mallari | Front-End Developer",
+  description: "My portfolio developed using Next 14",
   authors: [{ name: "Rayne Mallari" }],
 };
 
@@ -21,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body
+        className={`${roboto.className} scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-rounded scrollbar-thumb-rounded-lg`}
+      >
+        <Topbar />
         <Provider>{children}</Provider>
       </body>
     </html>

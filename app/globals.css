@@ -74,3 +74,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .logo {
+    @apply cursor-pointer text-2xl font-extrabold tracking-tight text-slate-700;
+  }
+
+  .topbar {
+    @apply sticky top-0 z-50 px-14 py-6 shadow-md;
+  }
+}
