@@ -77,11 +77,11 @@
 
 @layer components {
   .logo {
-    @apply cursor-pointer text-2xl font-extrabold tracking-tight text-slate-700;
+    @apply cursor-pointer text-2xl font-black tracking-tight text-slate-700;
   }
 
   .topbar {
-    @apply fixed top-0 z-50 flex w-full items-center justify-between bg-white px-14 py-6 shadow;
+    @apply fixed top-0 z-50 flex w-full items-center justify-between bg-white p-7 shadow md:px-10 lg:px-14;
   }
 
   .topbar_items {
