@@ -81,6 +81,10 @@
   }
 
   .topbar {
-    @apply sticky top-0 z-50 px-14 py-6 shadow-md;
+    @apply fixed top-0 z-50 flex w-full items-center justify-between bg-white px-14 py-6 shadow;
+  }
+
+  .topbar_items {
+    @apply cursor-pointer text-lg font-semibold text-slate-700 duration-200 hover:text-orange-500 hover:drop-shadow-lg;
   }
 }
