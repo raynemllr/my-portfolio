@@ -2,8 +2,13 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <main className="mt-4">
-      <h1>Content here</h1>
+    <main className="h-full">
+      <h1 className="py-20 text-7xl">hello</h1>
+      <h1 className="py-20 text-7xl">hello</h1>
+      <h1 className="py-20 text-7xl">hello</h1>
+      <h1 className="py-20 text-7xl">hello</h1>
+      <h1 className="py-20 text-7xl">hello</h1>
+      <h1 className="py-20 text-7xl">hello</h1>
     </main>
   );
 }

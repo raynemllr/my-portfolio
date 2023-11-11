@@ -23,9 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-rounded scrollbar-thumb-rounded-lg`}
+        className={`${roboto.className} scrollbar-track scrollbar-thin scrollbar-track-stone-50 scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg`}
       >
-        <Topbar />
         <Provider>{children}</Provider>
       </body>
     </html>
