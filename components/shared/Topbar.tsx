@@ -12,6 +12,7 @@ import {
   SheetClose,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 function Topbar() {
   const pageUp = () => {
@@ -24,7 +25,7 @@ function Topbar() {
         rayne.dev
       </h1>
 
-      <ul className="hidden gap-x-8 md:flex">
+      <ul className="hidden gap-x-6 md:flex">
         {topbarData.map((nav) => (
           <li className="topbar_items" key={nav.name}>
             <Link href={nav.link}>{nav.name}</Link>
@@ -37,12 +38,17 @@ function Topbar() {
           <Menu className="h-8 w-8 text-slate-700" />
         </SheetTrigger>
 
-        <SheetContent side="left" className="min-w-full">
-          <h1>Hello</h1>
-
-          <SheetClose asChild>
-            <X />
-          </SheetClose>
+        <SheetContent
+          side="left"
+          className="flex min-w-full items-center justify-center"
+        >
+          <ul className="flex flex-col items-center gap-y-10">
+            {topbarData.map((nav) => (
+              <li key={nav.name} className="text-2xl font-semibold">
+                <Link href={nav.link}>{nav.name}</Link>
+              </li>
+            ))}
+          </ul>
         </SheetContent>
       </Sheet>
     </nav>
