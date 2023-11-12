@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -71,20 +75,40 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground duration-300;
   }
 }
 
 @layer components {
   .logo {
-    @apply cursor-pointer text-2xl font-black tracking-tight text-slate-700;
+    @apply cursor-pointer text-xl font-black;
   }
 
   .topbar {
-    @apply fixed top-0 z-50 flex w-full items-center justify-between bg-white p-7 shadow md:px-10 lg:px-14;
+    @apply fixed top-0 z-50 flex w-full items-center justify-between bg-white p-7 text-slate-700 shadow duration-300 dark:bg-[#020817] dark:text-slate-300 dark:shadow-lg dark:shadow-slate-900 md:px-10 lg:px-14;
   }
 
   .topbar_items {
-    @apply cursor-pointer text-lg font-semibold text-slate-700 duration-200 hover:text-orange-500 hover:drop-shadow-lg;
+    @apply cursor-pointer text-base font-bold duration-200 hover:text-orange-500;
+  }
+
+  .footer {
+    @apply flex justify-center bg-zinc-800 py-12 text-white duration-300 dark:bg-slate-800 md:py-16;
+  }
+
+  .hero {
+    @apply h-screen w-2/3 bg-blue-400;
+  }
+
+  .about {
+    @apply h-screen w-2/3 bg-purple-400;
+  }
+
+  .projects {
+    @apply h-screen w-2/3 bg-green-400;
+  }
+
+  .contact {
+    @apply h-screen w-2/3 bg-pink-400;
   }
 }
