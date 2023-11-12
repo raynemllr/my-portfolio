@@ -1,12 +1,11 @@
-import Topbar from "@/components/shared/Topbar";
 import Provider from "@/lib/Provider";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({
+const noto_sans = Noto_Sans({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} scrollbar-track scrollbar-thin scrollbar-track-stone-50 scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg`}
+        className={`${noto_sans.className} scrollbar-track scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg`}
       >
         <Provider>{children}</Provider>
       </body>
