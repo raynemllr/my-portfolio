@@ -100,7 +100,7 @@ html {
     @apply h-screen w-2/3 bg-blue-400;
   }
 
-  .about {
+  .experiences {
     @apply h-screen w-2/3 bg-purple-400;
   }
 

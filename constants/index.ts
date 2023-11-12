@@ -6,8 +6,8 @@ export const topbarData = [
     link: "#home",
   },
   {
-    name: "About",
-    link: "#about",
+    name: "Experiences",
+    link: "#experiences",
   },
   {
     name: "Projects",
