@@ -2,17 +2,13 @@
 
 import Link from "next/link";
 import { topbarData } from "@/constants";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetClose,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import DarkModeSwitch from "./DarkModeSwitch";
 
 function Topbar() {
   const pageUp = () => {
@@ -45,7 +41,9 @@ function Topbar() {
           <ul className="flex flex-col items-center gap-y-10">
             {topbarData.map((nav) => (
               <li key={nav.name} className="text-2xl font-semibold">
-                <Link href={nav.link}>{nav.name}</Link>
+                <SheetClose asChild>
+                  <Link href={nav.link}>{nav.name}</Link>
+                </SheetClose>
               </li>
             ))}
           </ul>
