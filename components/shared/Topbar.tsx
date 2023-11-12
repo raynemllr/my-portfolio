@@ -35,7 +35,7 @@ function Topbar() {
 
       <Sheet>
         <SheetTrigger className="md:hidden">
-          <Menu className="h-8 w-8 text-slate-700" />
+          <Menu className="h-8 w-8" />
         </SheetTrigger>
 
         <SheetContent
