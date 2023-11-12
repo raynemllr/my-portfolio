@@ -1,14 +1,15 @@
-import Image from "next/image";
+import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
+import Hero from "@/components/sections/Hero";
+import Projects from "@/components/sections/Projects";
 
 function Home() {
   return (
-    <main className="h-full">
-      <h1 className="py-20 text-7xl">hello</h1>
-      <h1 className="py-20 text-7xl">hello</h1>
-      <h1 className="py-20 text-7xl">hello</h1>
-      <h1 className="py-20 text-7xl">hello</h1>
-      <h1 className="py-20 text-7xl">hello</h1>
-      <h1 className="py-20 text-7xl">hello</h1>
+    <main className="flex flex-col items-center">
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
     </main>
   );
 }
