@@ -1,3 +1,5 @@
+import DarkModeSwitch from "@/components/shared/DarkModeSwitch";
+import Footer from "@/components/shared/Footer";
 import Topbar from "@/components/shared/Topbar";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -5,6 +7,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <main className="flex flex-col">
       <Topbar />
       {children}
+      <DarkModeSwitch />
+      <Footer />
     </main>
   );
 }
