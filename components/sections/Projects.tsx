@@ -1,7 +1,9 @@
 function Projects() {
   return (
     <section id="projects" className="projects">
-      <h1 className="py-20 text-4xl font-bold">projects section</h1>
+      <div className="section-container">
+        <h1 className="text-4xl font-bold">Projects Section</h1>
+      </div>
     </section>
   );
 }

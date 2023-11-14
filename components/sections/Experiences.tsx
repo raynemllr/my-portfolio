@@ -1,7 +1,9 @@
 function Experiences() {
   return (
     <section id="experiences" className="experiences">
-      <h1 className="py-20 text-4xl font-bold">experiences section</h1>
+      <div className="section-container">
+        <h1 className="text-4xl font-bold">Experiences Section</h1>
+      </div>
     </section>
   );
 }
