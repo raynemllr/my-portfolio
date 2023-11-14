@@ -14,7 +14,8 @@ function DarkModeSwitch() {
 
   return (
     <Button
-      className="hover:animate-spin-slow fixed bottom-5 right-5 h-12 w-12 rounded-full md:bottom-10 md:right-10 md:h-16 md:w-16"
+      className="fixed bottom-5 right-5 rounded-full hover:animate-spin-slow md:bottom-10 md:right-10 md:h-16 md:w-16"
+      size="icon"
       onClick={toggleSwitch}
     >
       {theme === "light" ? <MoonStar /> : <Sun />}
