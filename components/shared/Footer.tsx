@@ -1,5 +1,4 @@
-import { personalLinks } from "@/constants";
-import Link from "next/link";
+import PersonalLinks from "./PersonalLinks";
 
 function Footer() {
   return (
@@ -10,18 +9,7 @@ function Footer() {
         </h3>
 
         <div className="flex gap-x-5 md:gap-x-8">
-          {personalLinks.map((item) => (
-            <Link
-              href={item.link}
-              key={item.link}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              {item.icon && (
-                <item.icon className="duration-200 hover:text-orange-500 md:h-7 md:w-7" />
-              )}
-            </Link>
-          ))}
+          <PersonalLinks />
         </div>
       </div>
     </footer>
