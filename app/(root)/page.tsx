@@ -5,7 +5,7 @@ import Projects from "@/components/sections/Projects";
 
 function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <main>
       <Hero />
       <Experiences />
       <Projects />
