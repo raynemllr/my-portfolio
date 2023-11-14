@@ -24,7 +24,6 @@ export default function RootLayout({
       <body
         className={`${noto_sans.className} scrollbar-track scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg`}
       >
-        <noscript>Enable Javascript to run this app.</noscript>
         <div id="root"></div>
         <Provider>{children}</Provider>
       </body>
