@@ -17,14 +17,14 @@ function Topbar() {
 
   return (
     <nav className="topbar">
-      <h1 className="logo" onClick={pageUp}>
-        rayne.dev
-      </h1>
+      <Link href="#home">
+        <h1 className="logo">rayne.dev</h1>
+      </Link>
 
       <ul className="hidden gap-x-6 md:flex">
-        {topbarData.map((nav) => (
-          <li className="topbar_items" key={nav.name}>
-            <Link href={nav.link}>{nav.name}</Link>
+        {topbarData.map(({ name, link }) => (
+          <li className="topbar_items" key={name}>
+            <Link href={link}>{name}</Link>
           </li>
         ))}
       </ul>
@@ -39,10 +39,10 @@ function Topbar() {
           className="flex min-w-full items-center justify-center"
         >
           <ul className="flex flex-col items-center gap-y-10">
-            {topbarData.map((nav) => (
-              <li key={nav.name} className="text-2xl font-semibold">
+            {topbarData.map(({ name, link }) => (
+              <li key={name} className="text-2xl font-semibold">
                 <SheetClose asChild>
-                  <Link href={nav.link}>{nav.name}</Link>
+                  <Link href={link}>{name}</Link>
                 </SheetClose>
               </li>
             ))}
