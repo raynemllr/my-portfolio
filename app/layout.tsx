@@ -20,10 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${noto_sans.className} scrollbar-track scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg`}
       >
+        <noscript>Enable Javascript to run this app.</noscript>
+        <div id="root"></div>
         <Provider>{children}</Provider>
       </body>
     </html>
