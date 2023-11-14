@@ -58,13 +58,6 @@ export const techStackIcons = [
     icon: "/assets/dev-icons/react.svg",
   },
   {
-    name: "nextjs",
-    icon: {
-      light: "/assets/dev-icons/nextjs.svg",
-      dark: "/assets/dev-icons/nextjs-dark.svg",
-    },
-  },
-  {
     name: "mongodb",
     icon: "/assets/dev-icons/mongodb.svg",
   },
