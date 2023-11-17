@@ -118,7 +118,7 @@ html {
 
   /* For hero image animation */
   .box {
-    @apply w-64 border-[3px] border-solid border-slate-700 shadow-md shadow-slate-400 dark:border-white md:w-80 xl:w-96;
+    @apply w-44 border-[3px] border-solid border-slate-700 shadow-md shadow-slate-400 dark:border-white sm:w-52 md:w-72 lg:w-80 xl:w-96;
     background-size: cover;
     background-position: top -10px center;
     background-blend-mode: multiply;

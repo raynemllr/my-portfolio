@@ -31,7 +31,7 @@ function Topbar() {
 
       <Sheet>
         <SheetTrigger className="md:hidden">
-          <Menu className="h-8 w-8" />
+          <Menu className="h-8 w-8" aria-label="menu-icon" />
         </SheetTrigger>
 
         <SheetContent

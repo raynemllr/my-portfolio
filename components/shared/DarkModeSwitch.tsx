@@ -18,8 +18,8 @@ function DarkModeSwitch() {
       size="icon"
       onClick={toggleSwitch}
     >
-      <MoonStar className="dark:hidden" />
-      <Sun className="hidden dark:block" />
+      <MoonStar className="dark:hidden" aria-label="moon-icon" />
+      <Sun className="hidden dark:block" aria-label="sun-icon" />
     </Button>
   );
 }

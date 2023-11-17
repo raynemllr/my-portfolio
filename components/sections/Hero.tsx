@@ -10,8 +10,8 @@ function Hero() {
           <Image
             src="/assets/images/hero-img.jpg"
             alt="hero-img"
-            width={1000}
-            height={1000}
+            width={500}
+            height={500}
             quality={100}
             priority
             className="box"

@@ -10,6 +10,7 @@ function PersonalLinks() {
           key={item.link}
           rel="noopener noreferrer"
           target="_blank"
+          aria-label={`${item.icon.toString}-icon`}
         >
           {item.icon && (
             <item.icon className="duration-200 hover:text-orange-500 md:h-7 md:w-7" />
