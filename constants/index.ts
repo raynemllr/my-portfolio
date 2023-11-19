@@ -70,3 +70,39 @@ export const techStackIcons = [
     icon: "/assets/dev-icons/mui.svg",
   },
 ];
+
+// * for Vertical Timeline Component List (Experiences section)
+export const experiencesData = [
+  {
+    position: "NextJS Developer",
+    company: "PSI",
+    location: "Remote",
+    description:
+      "Developed a Web3 Admin Dashboard and Country Villas application using React, Next, Typescript, Tailwind, etc.",
+    date: "October 2023 - Present",
+  },
+  {
+    position: "Front-End Developer",
+    company: "Reclaim Healthcare Administrative Services",
+    location: "Clark, Pampanga PH",
+    description:
+      "Developed two (2) internal projects using React, Next, Typescript, Tailwind, etc.",
+    date: "March 2023 - Present",
+  },
+  {
+    position: "Full-Stack Developer Trainee",
+    company: "PenBrothers Academy",
+    location: "Remote",
+    description:
+      "Participated in an extensive web architecture program within a corporate setting, focusing on technologies including MERN (MongoDB, ExpressJS, ReactJS & NodeJS) Stack and the Azure Cloud Platform. Successfully developed a basic carpool app and took part in two 5-day Hackathons.",
+    date: "September 2022 - December 2022",
+  },
+  {
+    position: "Client Success Intern",
+    company: "Dashlabs.ai",
+    location: "Remote",
+    description:
+      "Enhanced communication and problem-solving skills, contributing to company's success through proactive support and strategic collaboration.",
+    date: "May 2022 - July 2022",
+  },
+];
