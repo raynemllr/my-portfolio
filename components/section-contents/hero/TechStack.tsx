@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function TechStack() {
   return (
-    <div className="mt-8 flex flex-col items-center gap-x-3 lg:items-start xl:flex-row xl:items-end">
+    <div className="mt-8 flex flex-col items-center gap-x-3 lg:items-start 2xl:flex-row 2xl:items-end">
       <h2 className="text-base font-bold underline underline-offset-8 xl:no-underline">
         Tech Stack
       </h2>
