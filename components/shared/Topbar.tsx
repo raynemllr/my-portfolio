@@ -18,7 +18,7 @@ function Topbar() {
   return (
     <nav className="topbar">
       <Link href="#home">
-        <h1 className="logo">rayne.dev</h1>
+        <h1 className="logo">R A Y N E</h1>
       </Link>
 
       <ul className="hidden gap-x-6 md:flex">
