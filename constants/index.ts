@@ -73,14 +73,14 @@ export const techStackIcons = [
 
 // * for Vertical Timeline Component List (Experiences section)
 export const experiencesData = [
-  {
-    position: "NextJS Developer",
-    company: "PSI",
-    location: "Remote",
-    description:
-      "Developed a Web3 Admin Dashboard and Country Villas application using React, Next, Typescript, Tailwind, etc.",
-    date: "October 2023 - Present",
-  },
+  // {
+  //   position: "NextJS Developer",
+  //   company: "PSI",
+  //   location: "Remote",
+  //   description:
+  //     "Developed a Web3 Admin Dashboard and Country Villas application using React, Next, Typescript, Tailwind, etc.",
+  //   date: "October 2023 - Present",
+  // },
   {
     position: "Front-End Developer",
     company: "Reclaim Healthcare Administrative Services",
