@@ -5,11 +5,11 @@ import Image from "next/image";
 function TechStack() {
   return (
     <div className="mt-8 flex flex-col items-center gap-x-3 lg:items-start 2xl:flex-row 2xl:items-end">
-      <h2 className="text-base font-bold underline underline-offset-8 xl:no-underline">
+      <h2 className="text-base font-bold underline underline-offset-8 2xl:no-underline">
         Tech Stack
       </h2>
       <Separator
-        className="hidden h-7 w-[2px] bg-slate-700 duration-200 dark:bg-slate-500 xl:block"
+        className="hidden h-7 w-[2px] bg-slate-700 duration-200 dark:bg-slate-500 2xl:block"
         orientation="vertical"
       />
       <div className="mt-4 grid grid-cols-9 gap-x-3">
