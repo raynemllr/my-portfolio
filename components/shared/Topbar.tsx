@@ -36,7 +36,7 @@ function Topbar() {
 
         <SheetContent
           side="left"
-          className="flex min-w-full items-center justify-center"
+          className="flex min-w-full items-center justify-center bg-white/[.5] dark:bg-gray-950/[.5]"
         >
           <ul className="flex flex-col items-center gap-y-10">
             {topbarData.map(({ name, link }) => (
